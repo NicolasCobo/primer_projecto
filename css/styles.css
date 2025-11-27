@@ -1,10 +1,31 @@
+:root{
+    --blanco:#ffffff; 
+    --oscuro:#03053a;
+    --primario:#187e29;
+    --secundario:#0077b6;
+    --gris:#b1b5b9;
+    --tamaño-fuente: 16px;
+}
+
+
 html{
     font-size: 62.5%;
 }
 
 body{
-    font-size: 24px;
-    font-family: "Roboto", sans-serif;
+    font-size: var(--tamaño-fuente);
+    font-family:"Roboto", sans-serif;
+}
+
+
+/*utilidades*/
+.contenedor{
+    width: 75%;
+    margin: 0 auto;
+}
+
+.bg-secundario{
+    background-color: var(--primario);    
 }
 
 h1{
@@ -18,11 +39,28 @@ h3{
 }
 
 .titulo{
-    color: rgb(78, 3, 197);
+    color: var(--secundario)
     font-size: 3.8 rem;
     text-align: center;
 }
 .titulo span{
-    color: #187e29;
+    color: var(--primario);
     font-size: 2.5rem;
+}
+
+.navegacion-principal{
+    background-color:var(--primario) ;
+}
+
+.navegacion-principal a{
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.navegacion-principal a:hover{
+    background-color: var(--secundario);
+    color: var(--oscuro)
 }
